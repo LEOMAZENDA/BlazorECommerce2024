@@ -1,4 +1,4 @@
-# BlazorECommerce 
+# Blazor ECommerce 
 
 
 Bem-vindo ao repositório do meu novo projeto, uma Loja Online desenvolvida com Blazor WebAssembly e .NET 6, inspirado no curso de Patrick God - "Make an E-Commerce Website with Blazor WebAssembly in .NET 6".
