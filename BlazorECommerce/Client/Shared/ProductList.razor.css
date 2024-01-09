@@ -1,0 +1,31 @@
+﻿.media-img {
+    max-height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.media-img.houver {
+    
+    transform : scale(1.1);
+}
+
+.media-img-wrapper {
+    height: 200px;
+    text-align: center;
+}
+
+.price {
+    color: green;
+}
+
+@media (max-height: 1023.98px){
+    .media{
+        flex-direction: column;
+    }
+
+    .media-img-wrapper {
+        width: 100%;
+        height: auto;
+    }
+}

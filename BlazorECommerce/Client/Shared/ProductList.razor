@@ -1,0 +1,51 @@
+﻿<ul class="list-unstyled">
+    @foreach (var productItem in Products)
+    {
+        <li class="media my-3">
+            <div class="media-img-wrappe mr-2">
+                <a href="#">
+                    <img class="media-img" src="@productItem.ImageUrl" alt="@productItem.Title" />
+                </a>
+            </div>
+            <div class="media-body">
+                <a href="#">
+                    <h4 class="mb-0">@productItem.Title</h4>
+                </a>
+                <p>@productItem.Description</p>
+                <h5 class="price">
+                    @productItem.Price Kz
+                </h5>
+            </div>
+        </li>
+    }
+</ul>
+
+@code {
+    private static List<Product> Products = new List<Product>
+    {
+        new Product
+        {
+            Id = 1,
+            Title = "The Hitchhiker's Guide to the Galaxy",
+            Description = "The Hitchhiker's Guide to the Galaxy (no Brasil O Guia do Mochileiro das Galáxias, em Portugal À Boleia Pela Galáxia)[1] é uma série de ficção científica cómica criada por Douglas Adams.[2] Originalmente era transmitida na BBC Radio 4 em 1978,[2] foi mais tarde adaptada para outros formatos, e após vários anos se tornou um fenômeno internacional. As adaptações incluíram espetáculos de palco, uma trilogia de cinco livros publicados entre 1979 e 1992,[1] um sexto romance escrito pelo Eoin Colfer, em 2009,[3] uma série de TV de 1981,[4] um jogo de computador de 1984,[5] e três séries de três partes de adaptações de romance para quadrinhos publicados pela DC Comics entre 1993 e 1996. Houve também duas toalhas, produzidas por Beer-Davies, que são considerados por alguns fãs como uma versão oficial do Guia do Mochileiro das Galáxias, uma vez que incluem o texto do primeiro romance.[6][7] Uma versão cinematográfica de Hollywood financiada, produzida e filmada no Reino Unido, foi lançada em abril de 2005, e adaptações de rádio dos terceiro, quarto e quinto romance foram transmitidos entre 2004 e 2005. Muitas dessas adaptações, incluindo os romances, as séries de TV, o jogo de computador, e os primeiros rascunhos do roteiro do filme de Hollywood, foram feitos pelo próprio Adams, e alguns da adaptação de palco mostra novo material escrito por Adams.",
+            ImageUrl = "https://pt.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy#/media/Ficheiro:Oguiadomochileirodasgalaxias.jpg",
+            Price = 900.99m
+        },
+        new Product
+        {
+            Id = 2,
+            Title = "Ready Player One",
+            Description = "eady Player One (Brasil: Jogador Nº 1 / Portugal: Ready Player One - Jogador 1) foi o primeiro livro escrito por Ernest Cline. O livro é um romance com uma temática futurista. Foi lançado originalmente em 16 de agosto de 2011 pela Random House.[5] A história se passa no ano de 2045, o mundo passa por uma grande crise energética, destruição e pobreza são os cenários mais comuns. A única escapatória é o OASIS, uma realidade virtual onde a maioria das pessoas passa grande parte do seu tempo. No OASIS as pessoas estudam, trabalham, jogam e interagem umas com as outras, assim elas economizam combustível (recurso escasso), evitam ficar muito tempo em contato com a poluição e tem mais acesso a cultura e informações.[6]",
+            ImageUrl = "https://pt.wikipedia.org/wiki/Ready_Player_One#/media/Ficheiro:Ready_Player_One_(livro).jpg",
+            Price = 700.99m
+        },
+        new Product
+        {
+            Id = 3,
+            Title = "Nineteen Eighty-Four",
+            Description = "Mil Novecentos e Oitenta e Quatro (em inglês: Nineteen Eighty-Four), muitas vezes publicado como 1984, é um romance distópico da autoria do escritor britânico George Orwell e publicado em 1949.[1][2] O romance é ambientado na Pista de Pouso Número 1 (anteriormente conhecida como Grã-Bretanha), uma província do superestado da Oceania, em um mundo de guerra perpétua, vigilância governamental onipresente e manipulação pública e histórica. Os habitantes deste superestado são ditados por um regime político totalitário eufemisticamente chamado de Socialismo Inglês, encurtado para Ingsoc na novilíngua (também chamada de “novafala”), a linguagem inventada pelo governo. O superestado está sob o controle da elite privilegiada do Partido Interno, um partido e um governo que perseguem o individualismo e a liberdade de expressão como crime de pensamento, que é aplicado pela Polícia do Pensamento.[3]",
+            ImageUrl = "",
+            Price = 9600.99m
+        }
+    };
+}
